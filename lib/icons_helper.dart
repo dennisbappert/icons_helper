@@ -20,8 +20,6 @@ IconData getIconUsingPrefix({String name}) {
 }
 
 IconData getIconGuessFavorFA({String name}) {
-  name = name.toLowerCase();
-
   if (fontAwesomeIconsMap[name] != null) {
     return fontAwesomeIconsMap[name];
   } else {
@@ -30,8 +28,6 @@ IconData getIconGuessFavorFA({String name}) {
 }
 
 IconData getIconGuessFavorMaterial({String name}) {
-  name = name.toLowerCase();
-
   if (IconsMap[name] != null) {
     return IconsMap[name];
   } else {
@@ -40,12 +36,10 @@ IconData getIconGuessFavorMaterial({String name}) {
 }
 
 IconData getMaterialIcon({String name}) {
-  name = name.toLowerCase();
   return IconsMap[name];
 }
 
 IconData getFontAwesomeIcon({String name}) {
-  name = name.toLowerCase();
   return fontAwesomeIconsMap[name];
 }
 
