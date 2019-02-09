@@ -43,7 +43,7 @@ IconData getFontAwesomeIcon({String name}) {
   return FontAwesomeIconsMap[name];
 }
 
-const FontAwesomeIconsMap = {
+final FontAwesomeIconsMap = {
   'fiveHundredPx': FontAwesomeIcons.fiveHundredPx,
   'accessibleIcon': FontAwesomeIcons.accessibleIcon,
   'accusoft': FontAwesomeIcons.accusoft,
