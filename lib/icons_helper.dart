@@ -20,8 +20,8 @@ IconData getIconUsingPrefix({String name}) {
 }
 
 IconData getIconGuessFavorFA({String name}) {
-  if (FontAwesomeIconsMap[name] != null) {
-    return FontAwesomeIconsMap[name];
+  if (fontAwesomeIconsMap[name] != null) {
+    return fontAwesomeIconsMap[name];
   } else {
     return IconsMap[name];
   }
@@ -31,7 +31,7 @@ IconData getIconGuessFavorMaterial({String name}) {
   if (IconsMap[name] != null) {
     return IconsMap[name];
   } else {
-    return FontAwesomeIconsMap[name];
+    return fontAwesomeIconsMap[name];
   }
 }
 
@@ -40,10 +40,10 @@ IconData getMaterialIcon({String name}) {
 }
 
 IconData getFontAwesomeIcon({String name}) {
-  return FontAwesomeIconsMap[name];
+  return fontAwesomeIconsMap[name];
 }
 
-final FontAwesomeIconsMap = {
+final Map<String, IconData> fontAwesomeIconsMap = {
   'fiveHundredPx': FontAwesomeIcons.fiveHundredPx,
   'accessibleIcon': FontAwesomeIcons.accessibleIcon,
   'accusoft': FontAwesomeIcons.accusoft,
